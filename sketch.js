@@ -14,8 +14,8 @@ var starting_w;
 
 function setup() {
   colorMode(HSB, 100, 100, 100, 100);
-  createCanvas(windowWidth, windowHeight);
-  strength = random(200);
+  createCanvas(600, 600);
+  strength = random(40);
   scale = random(30);
   starting_w = random(100);
   starting = {x: (width/2), y: height/2, m: random(3)}
@@ -23,8 +23,8 @@ function setup() {
   s_dist = random(20);
   f_dist = random(20);
   for(var i = 0; i < num_walkers; i++){
-    walkers.push(new Walker(starting.x + starting_w, starting.y + (i + starting.m), strength, scale)); //fill the walker array
-    walkers.push(new Walker(starting.x + starting_w, starting.y + (i + starting.m), strength, scale)); //fill the walker array
+    walkers.push(new Walker(starting.x + starting_w, starting.y + (i + starting.m), strength, scale)); 
+    walkers.push(new Walker(starting.x + starting_w, starting.y + (i + starting.m), strength, scale)); 
   }
 
   stroke_a = random(20);
@@ -44,6 +44,10 @@ function draw() {
     vertex(walkers[i+1].loc.x, walkers[i+1].loc.y);
   }
   endShape();
+  if(frameCount == 500){
+    save();
+    noLoop();
+  }
 }
 
 var Walker = function(x, y, s, sc){
