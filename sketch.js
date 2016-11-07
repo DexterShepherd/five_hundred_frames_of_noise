@@ -45,8 +45,10 @@ function draw() {
   }
   endShape();
   if(frameCount == 500){
-    save();
+    //save();
     noLoop();
+    //walkers = [];
+    //setup(); 
   }
 }
 
