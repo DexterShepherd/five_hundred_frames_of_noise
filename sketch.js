@@ -77,9 +77,3 @@ function mouseClicked(){
   walkers = [];
   setup(); 
 }
-
-function keyPressed(){
-  if(keyCode == ENTER){
-    save();
-  }
-}
