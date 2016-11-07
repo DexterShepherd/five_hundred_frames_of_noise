@@ -37,18 +37,17 @@ function draw() {
   stroke((bg + f_dist + s_dist) % 100, 100, 100, 10);
   fill((bg + f_dist) % 100, 30, 100, 5);
   beginShape();
+
   for(var i = 0; i < walkers.length-1; i+=2){ //update and display the walkers
     walkers[i].update();
     walkers[i+1].update();
     vertex(walkers[i].loc.x, walkers[i].loc.y);
     vertex(walkers[i+1].loc.x, walkers[i+1].loc.y);
   }
+
   endShape();
   if(frameCount == 500){
-    //save();
     noLoop();
-    //walkers = [];
-    //setup(); 
   }
 }
 
@@ -71,9 +70,4 @@ var Walker = function(x, y, s, sc){
     stroke(200, 1);
     ellipse(this.loc.x, this.loc.y, 1, 1);
   }
-}
-
-function mouseClicked(){
-  walkers = [];
-  setup(); 
 }
