@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/DexterShepherd/five_hundred_frames_of_noise/issues"
   },
-  "homepage": "https://github.com/DexterShepherd/five_hundred_frames_of_noise#readme"
+  "homepage": "https://github.com/DexterShepherd/five_hundred_frames_of_noise#readme",
+  "dependencies": {
+    "twit": "^2.2.5"
+  }
 }
