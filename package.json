@@ -1,0 +1,24 @@
+{
+  "name": "five_hundred_frames_of_noise",
+  "version": "1.0.0",
+  "description": "a twiiter bot posting noisey things",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DexterShepherd/five_hundred_frames_of_noise.git"
+  },
+  "keywords": [
+    "twitter",
+    "creative-coding",
+    "bot"
+  ],
+  "author": "dexter shepherd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DexterShepherd/five_hundred_frames_of_noise/issues"
+  },
+  "homepage": "https://github.com/DexterShepherd/five_hundred_frames_of_noise#readme"
+}
