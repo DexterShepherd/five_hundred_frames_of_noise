@@ -2,7 +2,7 @@
   "name": "five_hundred_frames_of_noise",
   "version": "1.0.0",
   "description": "a twiiter bot posting noisey things",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
     "test": "test"
   },
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/DexterShepherd/five_hundred_frames_of_noise#readme",
   "dependencies": {
+    "phantom": "^3.0.2",
     "twit": "^2.2.5"
   }
 }
