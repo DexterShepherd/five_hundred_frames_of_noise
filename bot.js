@@ -22,7 +22,7 @@ setInterval(renderer.render(function() {
         if(err){
           console.log(err);
         } else {
-          var params = { status: '500', media_ids: [id] } 
+          var params = { media_ids: [id] } 
 
           client.post('statuses/update', params, function(err, data, response) {
             console.log('Tweeted!');

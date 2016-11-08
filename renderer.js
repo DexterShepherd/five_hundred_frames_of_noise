@@ -1,6 +1,6 @@
 const phantom = require('phantom');
 
-console.log('building 500 frames of noise' + new Date().toLocaleString());
+console.log('building 500 frames of noise ' + new Date().toLocaleString());
 
 
 exports.render = function(callback) {
