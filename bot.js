@@ -4,12 +4,12 @@ const keys = require('./keys');
 const renderer = require('./renderer');
 
 const client = new Twit(keys);
-var interval = 1000*60*60*12;
+var interval = 1000*60*60*6;
 
 
 
 setInterval(renderer.render(function() {
-  fs.readFile('./render.png', { encoding: 'base64' }, function(err, data) {
+  fs.readFile('./render.jpg', { encoding: 'base64' }, function(err, data) {
     if(err){
       return console.log(err);
     }

@@ -17,7 +17,7 @@ exports.render = function(callback) {
     console.log(status);
     if(status === "success") {
       setTimeout(function() {
-        phantom_page.render('render.png');
+        phantom_page.render('render.jpg');
         phantom_instance.exit();
         setTimeout(function(){ callback() }, 1000);
       }, 10000);
