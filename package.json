@@ -4,7 +4,7 @@
   "description": "a twiiter bot posting noisey things",
   "main": "bot.js",
   "scripts": {
-    "test": "test"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
