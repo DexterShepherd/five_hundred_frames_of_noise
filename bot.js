@@ -9,7 +9,7 @@ var interval = 1000*60*60*6;
 
 
 setInterval(renderer.render(function() {
-  fs.readFile('./render.jpg', { encoding: 'base64' }, function(err, data) {
+  fs.readFile('./render.png', { encoding: 'base64' }, function(err, data) {
     if(err){
       return console.log(err);
     }
