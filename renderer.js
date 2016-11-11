@@ -17,10 +17,10 @@ exports.render = function(callback) {
     console.log(status);
     if(status === "success") {
       setTimeout(function() {
-        phantom_page.render('render.jpg');
+        phantom_page.render('render.png');
         phantom_instance.exit();
         setTimeout(function(){ callback() }, 1000);
-      }, 10000);
+      }, 20000);
     } else {
       console.log('exiting with errors');
       phantom_instance.exit();
