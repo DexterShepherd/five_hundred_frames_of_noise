@@ -30,7 +30,7 @@ function setup() {
   stroke_a = random(20);
   fill_a = random(20);
   bg = random(50);
-  background(bg, 20, 100, 50);
+  background(bg, 20, 100);
 }
 
 function draw() {
